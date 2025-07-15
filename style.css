@@ -18,6 +18,7 @@ nav {
     z-index: 1000;
 }
 
+
 .nav-items {
     display: flex;
     align-items: center;
@@ -38,8 +39,6 @@ nav {
     top: 1px;
     padding-left: 10px;
     position: relative;
-    /* Add transition for rotation */
-    transition: transform 0.3s ease-out;
 }
 
 .btn-login {
@@ -62,6 +61,9 @@ nav {
     font-weight: 600;
     border-radius: 4px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
@@ -181,7 +183,6 @@ input:checked+.slider:before {
     gap: 10px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .card h2 {
@@ -269,11 +270,13 @@ sub {
 
 .left {
     display: flex;
+    background-color: white;
     flex-direction: column;
 }
 
 .left h6 {
     font-family: 'poppins';
+    background-color: white;
     font-weight: 500;
     font-size: 22px;
     margin: 0;
@@ -325,7 +328,7 @@ sub {
     color: #4CAF5A;
 }
 
-.q{
+.q {
     width: 650px;
     display: flex;
     justify-content: space-between;
@@ -337,17 +340,19 @@ sub {
     transition: color 0.3s ease;
 }
 
-.q:hover{
+.q:hover {
     color: #4CAF50;
     cursor: pointer;
 }
 
-.q::selection{
+.q::selection {
     background-color: transparent;
     color: inherit;
 }
 
-.ans{
+
+
+.ans {
     width: 650px;
     font-family: 'Poppins';
     font-size: 16px;
@@ -386,11 +391,16 @@ footer h6 {
     font-size: 17px;
 }
 
+
 footer a {
     text-decoration: none;
-    color: rgb(13, 13, 20);
+    color: #404449;
     font-size: 16px;
     padding: 2px 0px;
+}
+
+footer a:hover {
+    color: black;
 }
 
 .product,
@@ -471,4 +481,182 @@ footer a {
 .btn:hover {
     color: white;
     background-color: #4CAF50;
+}
+
+@media (max-width: 1545px) {
+    nav {
+        padding: 10px 0px;
+    }
+
+    .card {
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .card h2 {
+        font-size: 70px;
+    }
+
+    sup {
+        font-size: 40px;
+        font-weight: 200;
+    }
+
+    sub {
+        font-weight: 300;
+        font-size: 15px;
+        top: 220px;
+    }
+
+    .card .btn {
+        width: 250px;
+        height: 40px;
+    }
+
+    footer {
+        padding: 10px 150px;
+    }
+}
+
+@media (max-width: 780px) {
+    nav {
+        padding: 10px 0px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+
+    .btn-login {
+        width: 60px;
+        height: 30px;
+        padding: 0px 5px;
+        font-size: 10px;
+    }
+
+    .nav-items a {
+        font-size: 13px;
+    }
+
+    .card {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    .card h2 {
+        font-size: 50px;
+    }
+
+    sup {
+        font-size: 30px;
+    }
+
+    sub {
+        font-weight: 300;
+        font-size: 13px;
+        top: 220px;
+    }
+
+    .card .btn {
+        width: 150px;
+        height: 40px;
+    }
+
+    footer {
+        padding: 10px 50px;
+        row-gap: 100px;
+    }
+
+    nav img {
+        width: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        padding-top: 0px;
+        gap: 17px;
+        flex-direction: column;
+    }
+
+    main h2 {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    h3 {
+        position: relative;
+        font-size: 26px;
+        margin: 15px;
+    }
+
+    h3 img {
+        top: -35px;
+        left: 9px;
+        width: 120px;
+    }
+
+    .card-holder {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section {
+        row-gap: 30px;
+    }
+
+    .section h2 {
+        margin-top: 40px;
+    }
+
+    .add-ons {
+        width: 80%;
+    }
+
+    .left h6 {
+        font-size: 18px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+    .message {
+        width: 550px;
+        padding: 0px 40px;
+    }
+
+    .message h2 {
+        font-size: 20px;
+        margin: 10px;
+        font-weight: 400;
+    }
+
+    .q {
+        width: 550px;
+        font-size: 15px;
+    }
+
+    .ans {
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    footer h6 {
+        font-size: 20px;
+    }
+}
+@media (max-width:500px) {
+    
+    nav{
+        display: none;
+    }
+    
 }
