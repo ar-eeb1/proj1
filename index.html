@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BONSAI Replice BY AREEB</title>
+    <title>PROJECT 2</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -13,7 +13,7 @@
 <body>
 
     <head>
-        <nav>
+        <nav id="navbar-large-screen">
             <img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
                 width="150" alt="Bonsai logo">
             <div class="nav-items">
@@ -38,6 +38,30 @@
                 <button class="btn-login">LOG IN</button>
                 <button class="btn">START FREE</button>
             </div>
+        </nav>
+        <nav id="navbar-small-screen" >
+            <div class="sidebar-head">
+                <img src="https://web.archive.org/web/20221117021714im_/https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7caaf7feb674_logo%20copy.svg"
+                    width="20" alt="Bonsai logo">
+                <ion-icon class="menu" name="menu-outline"></ion-icon>
+            </div>
+            <div class="sidebar">
+                <a class="prod-hover" href="#">Product
+                    <ion-icon class="down" name="chevron-down-outline"></ion-icon>
+                </a>
+                <div class="sep"></div>
+                <a href="#">Templates<ion-icon class="down" name="chevron-down-outline"></ion-icon></a>
+                <div class="sep"></div>
+                <a href="">Pricing</a>
+                <div class="sep"></div>
+                <a href="">Reviews</a>
+                <div class="sep"></div>
+                <div class="small-screen-btns">
+                    <button class="small-btn-login">LOG IN</button>
+                    <button class="small-btn">START FREE</button>
+                </div>
+            </div>
+
         </nav>
     </head>
     <main>
@@ -73,7 +97,7 @@
             <span><ion-icon class="check" name="checkmark-sharp"></ion-icon>Expense Tracking</span>
             <span><ion-icon class="check" name="checkmark-sharp"></ion-icon>Up to 5 Project Collaborators</span>
 
-            <button class="btn ">START FREE</button>
+            <button class="btn">START FREE</button>
         </div>
         <div class="card">
             <h1>Professional</h1>
@@ -167,14 +191,16 @@
             </p>
             <p class="faq-answer-one ans" hidden>When you start your trial with Bonsai you'll receive full, unlimited
                 access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your credit card
-                information to begin your trial, but don't worry - we won't charge you anything until the subscription ends! If you
+                information to begin your trial, but don't worry - we won't charge you anything until the subscription
+                ends! If you
                 wish to cancel at any time during the trial period, you can do so through your Subscriptions
                 Settings Page.</p>
         </div>
         <div id="ques">
             <p class="q2 q">Can I change plans anytime? <ion-icon class="down" name="chevron-down-outline"></ion-icon>
             </p>
-            <p class="faq-answer-two ans" hidden>Yes, you can from within your account. If you have already subscribed to a
+            <p class="faq-answer-two ans" hidden>Yes, you can from within your account. If you have already subscribed
+                to a
                 plan, or want to downgrade or upgrade your current one, you can do this by going to your "Settings" and
                 "Subscription".</p>
         </div>
@@ -182,7 +208,8 @@
             <p class="q3 q">How do I pause my Bonsai subscription? <ion-icon class="down"
                     name="chevron-down-outline"></ion-icon>
             </p>
-            <p class="faq-answer-three ans" hidden>We totally understand that with the nature of freelancing, work ebbs and
+            <p class="faq-answer-three ans" hidden>We totally understand that with the nature of freelancing, work ebbs
+                and
                 flows so you might not always need your Bonsai subscription to remain active! The good news is that you
                 can cancel or pause your monthly subscription at any time without penalty. Once cancelled, you'll be
                 able to continue logging in to access all your documents and even continue to use our free features,
@@ -191,7 +218,8 @@
         <div id="ques">
             <p class="q4 q">What is your refund policy? <ion-icon class="down" name="chevron-down-outline"></ion-icon>
             </p>
-            <p class="faq-answer-four ans" hidden>If you contact us within 2 weeks of being charged for your subscription, we
+            <p class="faq-answer-four ans" hidden>If you contact us within 2 weeks of being charged for your
+                subscription, we
                 will be happy to issue a refund for you!Beyond those 2 weeks, you will need to cancel or modify the
                 subscription from the Subscriptions Tab in Settings to avoid future charges, but refunds will not be
                 issued. This applies to both monthly and annual plans.</p>
