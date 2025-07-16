@@ -55,19 +55,19 @@ q4.addEventListener('click', function () {
     }
 });
 
-let c1a = document.querySelector('.start') 
-let c2a = document.querySelector('.prof') 
-let c3a = document.querySelector('.bus') 
+let c1a = document.querySelector('.start')
+let c2a = document.querySelector('.prof')
+let c3a = document.querySelector('.bus')
 let c1 = document.querySelectorAll('.month')
 let toggleBtn = document.getElementById('toggleBtn')
 
-let createdElements = [] 
+let createdElements = []
 
 const org1 = c1a.innerHTML
 const org2 = c2a.innerHTML
 const org3 = c3a.innerHTML
 
-function showMonthly(){
+function showMonthly() {
     c1a.innerHTML = org1
     c2a.innerHTML = org2
     c3a.innerHTML = org3
@@ -78,10 +78,10 @@ function showMonthly(){
         }
     }
 
-    createdElements = [] 
+    createdElements = []
 }
 
-function addYearly(){
+function addYearly() {
     for (const element of c1) {
         let newDiv = document.createElement('div')
         newDiv.className = 'year'
@@ -90,21 +90,33 @@ function addYearly(){
         newDiv.style.textAlign = 'end'
 
         element.insertAdjacentElement('afterend', newDiv)
-        createdElements.push(newDiv) 
+        createdElements.push(newDiv)
     }
 }
 
-function showYearly(){
+function showYearly() {
     c1a.innerHTML = '54'
     c2a.innerHTML = '32'
     c3a.innerHTML = '52'
 }
 
-toggleBtn.addEventListener('change', function(){
+toggleBtn.addEventListener('change', function () {
     if (toggleBtn.checked) {
         showYearly()
         addYearly()
     } else {
         showMonthly()
+    }
+})
+
+let menu = document.querySelector('.menu')
+let sidebar = document.querySelector('.sidebar')
+
+
+menu.addEventListener('click', function () {
+    if (sidebar.style.display === 'none') {
+        sidebar.style.display = 'flex'
+    } else if (sidebar.style.display = 'flex') {
+        sidebar.style.display = 'none'
     }
 })
