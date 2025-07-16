@@ -7,17 +7,19 @@ body {
     background-color: #f7f7f7;
 }
 
-
-nav {
+#navbar-large-screen {
     font-family: 'Poppins';
     position: relative;
-    padding: 20px 230px;
+    padding: 20px 200px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     z-index: 1000;
 }
 
+#navbar-small-screen {
+    display: none;
+}
 
 .nav-items {
     display: flex;
@@ -39,6 +41,11 @@ nav {
     top: 1px;
     padding-left: 10px;
     position: relative;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
 }
 
 .btn-login {
@@ -653,10 +660,152 @@ footer a:hover {
         font-size: 20px;
     }
 }
+
 @media (max-width:500px) {
-    
-    nav{
+    #navbar-small-screen {
+        margin: 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-btn-login:hover {
+        color: white;
+        background-color: #00A37E;
+    }
+
+    #navbar-small-screen img {
+        width: 40px;
+    }
+
+    .small-btn:hover {
+        color: white;
+        background-color: #4CAF50;
+    }
+
+    .small {
+        display: flex;
+        margin: 0px 20px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #navbar-small-screen .sidebar-head {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
+
+    #navbar-small-screen .menu {
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    #navbar-small-screen .down {
+        top: 1px;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    .small-screen-btns {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .small-btn-login {
+        cursor: pointer;
+        padding: 5px 0px;
+        color: #00A37E;
+        border: 1px solid #00A37E;
+        border-radius: 4px;
+        text-decoration: none;
+        background-color: white;
+    }
+
+    .small-btn {
+        padding: 5px 0px;
+        cursor: pointer;
+        background-color: #00A37E;
+        color: white;
+        border: 1px solid #00A37E;
+        /* font-weight: 600; */
+        border-radius: 4px;
+    }
+
+    #navbar-small-screen .sidebar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar-small-screen .sidebar a {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        text-decoration: none;
+        color: #4C525A;
+    }
+
+    #navbar-small-screen a {
+        font-family: 'Poppins';
+    }
+
+    #navbar-small-screen .sep {
+        display: block;
+        margin: 10px auto;
+        width: 400px;
+        border: 1px solid lightgray;
+        font-family: 'Poppins';
+    }
+
+    #navbar-large-screen {
         display: none;
     }
-    
+    .section h2{
+        font-size: 25px;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+    .message {
+        width: 350px;
+    }
+    .questions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .questions h1 {
+        font-size: 25px;
+    }
+
+    .q {
+        width: 350px;
+        font-size: 15px;
+    }
+
+    .ans {
+        width: 350px;
+    }
+
+    .ans:not([hidden]) {
+        overflow-y: scroll;
+    }
+
+
+    footer {
+        padding: 0px 10px;
+    }
+
+    footer h6 {
+        font-size: 13px;
+    }
+    footer a {
+        font-size: 13px;
+    }
+
 }
